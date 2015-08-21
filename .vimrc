@@ -30,6 +30,9 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mustache/vim-mustache-handlebars'
 
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -65,6 +68,8 @@ set number
 colorscheme slate
 set colorcolumn=80
 highlight ColorColumn ctermbg=8
+
+let mapleader=","
 
 " You want to be part of the gurus? Time to get in serious stuff and stop using
 " arrow keys.
@@ -150,7 +155,6 @@ let g:syntastic_check_on_wq = 0
 " NerdTree
 " autocmd vimenter * NERDTree
 " autocmd BufNew * wincmd l
-map <F9> :NERDTreeToggle<CR>
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
@@ -164,3 +168,9 @@ endfunction
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 
+"NerdTree
+"" NERDTree
+map <leader>n :NERDTreeToggle<CR>
+
+" TagBar
+map <leader>t :TagbarToggle<CR>

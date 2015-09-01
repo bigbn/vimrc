@@ -23,15 +23,19 @@ Plugin 'honza/vim-snippets'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'heavenshell/vim-jsdoc'
 Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'aklt/vim-substitute'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mustache/vim-mustache-handlebars'
-
+Plugin 'tpope/vim-surround'
 Plugin 'L9'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'mhinz/vim-startify'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -174,3 +178,6 @@ map <leader>n :NERDTreeToggle<CR>
 
 " TagBar
 map <leader>t :TagbarToggle<CR>
+
+"startify
+"let g:startify_custom_header = 'Я произвольный заголовоук <CR>'

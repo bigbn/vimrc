@@ -31,7 +31,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'mustache/vim-mustache-handlebars'
 
 Plugin 'L9'
-Plugin 'FuzzyFinder'
+Plugin 'kien/ctrlp.vim'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"

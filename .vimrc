@@ -36,6 +36,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'mhinz/vim-startify'
+Plugin 'tomasr/molokai'
+Plugin 'troydm/easybuffer.vim'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -69,7 +71,14 @@ set smarttab " Autotabs for certain code
 set shiftwidth=2
 set tabstop=2
 set number
-colorscheme slate
+
+" During installation the molokai colorscheme might not be avalable
+if filereadable(globpath(&rtp, 'colors/molokai.vim'))
+	colorscheme molokai
+else
+	colorscheme slate
+endif
+
 set colorcolumn=80
 highlight ColorColumn ctermbg=8
 
@@ -178,6 +187,13 @@ map <leader>n :NERDTreeToggle<CR>
 
 " TagBar
 map <leader>t :TagbarToggle<CR>
+
+" bufer explorer
+map <leader>b :EasyBuffer<CR>
+
+"reload conf
+map <leader>r :so ~/.vimrc<CR>
+map <leader>q :bdelete<CR>
 
 "startify
 "let g:startify_custom_header = 'Я произвольный заголовоук <CR>'

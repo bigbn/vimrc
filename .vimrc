@@ -38,7 +38,9 @@ Plugin 'tpope/vim-markdown'
 Plugin 'mhinz/vim-startify'
 Plugin 'tomasr/molokai'
 Plugin 'troydm/easybuffer.vim'
-
+Plugin 'moll/vim-node'
+Plugin 'guileen/vim-node-dict'
+Plugin 'Chiel92/vim-autoformat'
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -70,7 +72,7 @@ set ruler " Always shows location in file (line#)
 set smarttab " Autotabs for certain code
 set shiftwidth=2
 set tabstop=2
-set number
+set relativenumber
 
 " During installation the molokai colorscheme might not be avalable
 if filereadable(globpath(&rtp, 'colors/molokai.vim'))

@@ -73,6 +73,7 @@ set smarttab " Autotabs for certain code
 set shiftwidth=2
 set tabstop=2
 set relativenumber
+set expandtab
 
 " During installation the molokai colorscheme might not be avalable
 if filereadable(globpath(&rtp, 'colors/molokai.vim'))
